@@ -1,0 +1,193 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+}
+
+body{
+  font-family: "Lexend Deca", sans-serif;
+  font-optical-sizing: auto;
+  color: #191919;
+}
+
+h6 { font-size: 0.83rem; }
+h5 { font-size: 0.996rem; }
+h4 { font-size: 1.1952rem; }
+h3 { font-size: 1.4342rem; }
+h2 { font-size: 1.7211rem; }
+h1 { font-size: 2.0653rem; }
+.display { font-size: 2.4784rem; }
+
+p { font-size: 0.83rem; }
+
+hr{
+  border: none;
+  border-top: 1px solid #e0e0e0;
+}
+
+main,header,footer {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+.featured-products {
+  display: flex;
+  gap: 1rem;
+}
+.featured-product__description {
+  color: #9f9f9f;
+}
+
+
+header{
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+header h1 span{
+  font-size: large;
+  position: absolute;
+  z-index: -1;
+}
+nav {
+  margin-left: auto;
+}
+nav ul {
+  display: flex;
+  gap: 1rem;
+  list-style: none;
+}
+
+nav a{
+  text-decoration: none;
+  color: inherit;
+  text-transform: uppercase;
+  font-size: 0.796rem;
+  font-weight: 600;
+}
+
+.hero {
+  height: 300px;
+  background: url('../images/thick-as-thieves.avif') no-repeat center/cover;
+  margin-bottom: 6rem;
+}
+.hero__description {
+  background: #FFFFFF;
+  padding: 1rem;
+  width: 300px;
+  transform: translate(20%, 20%);
+  box-shadow: 8px 8px 20px rgba(69, 164, 242, 0.23);
+}
+.hero__description h3 {
+  margin-top: 1rem;
+  text-transform: capitalize;
+}
+.hero__description span {
+  background: #f4ce11;
+  padding: .25rem .35rem;
+  border-radius: 4px;
+  font-size: .65rem;
+}
+.hero__description p{
+  margin: 1rem 0 5rem;
+  font-size: .73rem;
+  font-weight: 200;
+  color: #808080;
+}
+.hero__description a {
+  display: block;
+  text-decoration: none;
+  color: #000000;
+  text-align: center;
+  font-weight: 600;
+  font-size: .73rem;
+  border-radius: 8px;
+  padding: 1rem .5rem;
+  transition: background 0.3s ease;
+}
+.hero__description a:hover{
+  background: #000000;
+  color: #f6f6f6;
+}
+
+
+.best-sellers {
+  margin-bottom: 6rem;
+}
+.best-sellers h2 {
+  margin-bottom: 1rem;
+}
+.best-sellers > div {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+.best-seller__list {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  list-style: none;
+}
+.best-seller__game {
+  display: flex;
+  width: calc((100% - 2rem) / 3);
+  gap: 1rem;
+  padding: .35rem .5rem .35rem .35rem;
+  border-radius: 6px;
+  background: #f4f8ff;
+  transition: all 0.3s ease;
+}
+.best-seller__game:hover{
+  background: #f9fbff;
+  transform: scale(1.03);
+  box-shadow: 8px 8px 20px rgba(69, 164, 242, 0.23);
+}
+.best-seller__game div{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: .35rem;
+}
+.best-seller__image{
+  border-radius: 6px;
+}
+.best-seller__name{
+  text-align: right;
+  font-size: 0.83rem;
+}
+.best-seller__platform {
+  margin-top: auto;
+  font-size: .63rem;
+  font-weight: 500;
+  border-radius: 3px;
+  padding: .15rem .35rem;
+  background: #d4dfff;
+}
+.best-seller__price{
+  font-size: .835rem;
+  font-weight: 600;
+}
+
+footer {
+  text-align: center;
+  font-size: 0.73rem;
+  color: #9f9f9f;
+  padding: 1rem 1rem 2rem;
+}
+
+footer address{
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+footer a{
+  text-decoration: none;
+  font-style: normal;
+  color: #191919;
+}

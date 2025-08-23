@@ -7,12 +7,18 @@
   <link rel="canonical" href="https://www.gameandplay.cl">
   <title>Inicio | Game & Play</title>
 
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
   <header>
-    <h1>Bienvenido a Game and Play</h1>
-    <p>Tu tienda de videojuegos favorita</p>
+    <h1>
+      <span>next up games</span>
+      <img src="images/logo.png" alt="next up games" width="180" height="72">
+    </h1>
+    
     <nav>
       <ul>
         <li><a href="index.html" aria-current="page">Inicio</a></li>
@@ -24,38 +30,79 @@
     </nav>
   </header>
   <main>
-    <section>
-      <h2>Últimos lanzamientos</h2>
-      <p>Descubre los últimos juegos que han llegado a nuestra tienda.</p>
-      <ul>
-        <li>Mafia: The old country</li>
-        <li>F1 25</li>
-        <li>GTA 6</li>  
-        <li>Red Death Redemption 2</li>  
-      </ul>
-    </section>
+    <section class="hero">
+      <div class="hero__description">
+        <span>favorito</span>
+        <h3>thick as thieves</h3>
+        <p>
+          Planifica tu ascenso a ladrón experto en una metrópolis deslumbrante y lúgubre de 1910 que combina lo industrial con la magia y la intriga.
+        </p>
+        <a href="#" class="hero__link">Ver más</a>
+      </div>
+    </section>    
 
-    <section>
-      <h2>Los 5 juegos mas comprados en Chile</h2>
-      <ol>
-        <li>FIFA 24</li>
-        <li>Call of Duty: Modern Warfare II</li>
-        <li>Grand Theft Auto V</li>
-        <li>Minecraft</li>
-        <li>Fortnite</li>
-      </ol>
+    <section class="best-sellers">
+      <h2>Mas vendidos</h2>
+      <div>
+        <ol class="best-seller__list">
+          <li class="best-seller__game">
+            <img src="./images/resident-evil-2.avif" class="best-seller__image" alt="Resident Evil 2" width="100" height="100">
+            <div>
+              <span class="best-seller__name">Resident Evil 2</span>
+              <span class="best-seller__platform">PS5</span>
+              <span class="best-seller__price">$49.990</span>
+            </div>
+          </li>
+
+          <li class="best-seller__game">
+            <img src="./images/call-of-duty.avif" class="best-seller__image" alt="Call of Duty" width="100" height="100">
+            <div>
+              <span class="best-seller__name">Call of Duty: Modern Warfare III</span>
+              <span class="best-seller__platform">PC</span>
+              <span class="best-seller__price">$49.990</span>
+            </div>
+          </li>
+
+          <li class="best-seller__game">
+            <img src="./images/gtav.avif" class="best-seller__image" alt="GTA V" width="100" height="100">
+            <div>
+              <span class="best-seller__name"> Grand Theft Auto V</span>
+              <span class="best-seller__platform">PS5 - XBox</span>
+              <span class="best-seller__price">$49.990</span>
+            </div>
+           </li>
+
+          <li class="best-seller__game">
+            <img src="./images/mortal-kombat-1.avif" class="best-seller__image" alt="Mortal Kombat 1" width="100" height="100">
+            <div>
+              <span class="best-seller__name">Mortal Kombat 1</span>
+              <span class="best-seller__platform">PS5</span>
+              <span class="best-seller__price">$49.990</span>
+            </div>
+          </li>
+
+          <li class="best-seller__game">
+            <img src="./images/silent-hill-2.avif" class="best-seller__image" alt="Silent Hill 2" width="100" height="100">
+            <div>
+              <span class="best-seller__name">Silent Hill</span>
+              <span class="best-seller__platform">PS5 - XBox</span>
+              <span class="best-seller__price">Gratis</span>
+            </div>
+          </li>
+        </ol>
+      </div>
     </section>
     
-    <section>
+    <section class="featured">
       <h2>Productos destacados</h2>
-      <article>
-        <h3>Crash Bandicoot - N Sane Trilogy</h3>
-        <figure>
+      <article class="featured-product">
+        <h3 class="featured__name">Crash Bandicoot - N Sane Trilogy</h3>
+        <figure class="featured__image">
           <img src="./images/crash-bandicoot.avif" alt="Juego Crash Bandicoot reemasterizado" width="300" height="300">
        </figure>
-        <p>Crash Bandicoot está de vuelta y mejorado! Embárcate en aventuras en los tres juegos originales, Crash Bandicoot™, Crash Bandicoot<sup>tm</sup> 2: Cortex Strikes Back y Crash Bandicoot<sup>tm</sup>: Warped. Vive de nuevo todos tus momentos favoritos con Crash en toda su gloria gráfica completamente remasterizada.</p>
-        <p><b>Precio: $19.990</b></p>
-        <a href="#">Ver detalle</a>
+        <p class="featured__description">Crash Bandicoot está de vuelta y mejorado! Embárcate en aventuras en los tres juegos originales, Crash Bandicoot™, Crash Bandicoot<sup>tm</sup> 2: Cortex Strikes Back y Crash Bandicoot<sup>tm</sup>: Warped. Vive de nuevo todos tus momentos favoritos con Crash en toda su gloria gráfica completamente remasterizada.</p>
+        <p class="featured__price"><b>Precio: $19.990</b></p>
+        <a href="#" class="featured__link">Ver detalle</a>
       </article>
       
       <article>
@@ -69,12 +116,14 @@
       </article>
     </section>
   </main>
+  <hr>
   <footer>
     <address>
       <a href="mailto:contacto@gameandplay.cl">contacto@gameandplay.cl</a><br>
-      <a href="tel:+56987654321">Teléfono: +56 9 8765 4321</a>
+      <a href="tel:+56987654321">+56 9 8765 4321</a>
     </address>
   </footer>
   
 </body>
 </html>
+
